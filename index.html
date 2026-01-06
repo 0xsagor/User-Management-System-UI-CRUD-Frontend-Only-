@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1>User Management System</h1>
+
+  <!-- Add User -->
+  <div class="form">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <button onclick="addUser()">Add User</button>
+  </div>
+
+  <!-- Search -->
+  <input type="text" id="search" placeholder="Search user..." onkeyup="renderUsers()">
+
+  <!-- User List -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="userList"></tbody>
+  </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
